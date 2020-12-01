@@ -1,0 +1,144 @@
+* {box-sizing: border-box;}
+
+.container > * {
+  background-color: #97B2AD;
+  padding: 10px
+}
+
+nav ul {
+  border: 1px solid #97B2AD;
+  background-color: #97B2AD;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+}
+
+
+
+li {
+  float: left;
+  flex-grow: 1;
+}
+
+
+li a {
+  display: inline-block;
+  color: #FFFFFF;
+  margin-right: 20px;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #CEDDD9;
+}
+
+
+.logo{
+  width: 5em;
+  height: 5em;
+}
+
+.header{
+  grid-area: header;
+  text-align: center;
+}
+
+.flexbox {
+  grid-area: nav;
+}
+
+.content {
+  grid-area: content;
+  background-color: white;
+}
+
+
+.footer {
+  grid-area: footer;
+  background-color: #CEDDD9;
+}
+
+.container {
+  max-width: 100%;
+  display: grid;
+  height: 100vh;
+  grid-gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 0.2fr 3fr 0.2fr;
+  grid-template-areas:
+  "header"
+  "nav"
+  "content"
+  "footer"
+}
+
+.billede{
+  width: 15em;
+  height: auto;
+  content-align: center;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "billede 1"
+  "billede 2"
+  "billede 3"
+}
+
+
+
+@media  (min-width:400px){
+.container {
+  display: grid;
+  height: 100vh;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.2fr 2fr 0.2fr;
+  grid-template-areas:
+  "header nav"
+  "content content"
+  "content content"
+  "footer footer"
+}
+
+.header {
+  background-color:#97B2AD;
+  border: 0;
+  padding:0;
+  margin: 0;
+}
+
+nav ul {
+  background-color: white;
+}
+
+li a {
+  color: #97B2AD;
+}
+
+
+
+
+
+
+@media  (min-width:800px){
+.container {
+  display: grid;
+  height: 100vh;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.2fr 2fr 0.2fr;
+  grid-template-areas:
+  "header nav"
+  "content content"
+  "content content"
+  "footer footer"
+}
