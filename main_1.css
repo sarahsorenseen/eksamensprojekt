@@ -1,4 +1,7 @@
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+padding: 0%;
+margin: 0%;
+}
 
 .container > * {
   background-color: white;
@@ -123,30 +126,46 @@ li a:hover {
   "footer"
 }
 
-.billede{
+.billede1{
+  width: 15em;
+  height: 200px;
+  background-image:url(hvid_sort_portrait.jpg);
+  content-align: center;
+  grid-area: billede1;
+  background-size: cover;
+}
+
+.billede2{
   width: 15em;
   height: auto;
   content-align: center;
+  grid-area: billede2;
+}
+
+.billede3{
+  width: 15em;
+  height: auto;
+  content-align: center;
+  grid-area: billede3;
+}
+
+.text {
+  grid-area: text;
 }
 
 .collage {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
-  "billede 1"
-  "billede 2"
-  "billede 3"
+  "billede1"
+  "text"
+  "billede2"
+  "billede3"
 }
 
-.collage img {
-  display:grid;
-  margin: 0 auto;
-}
 
-.collage p {
-  display: grid;
-  margin: 0 auto;
-}
+
 
 .nav-hide-on-mobile {
   display: none;
@@ -154,6 +173,10 @@ li a:hover {
 
 
 @media  (max-width:400px){
+
+  nav ul {
+    flex-direction: column;
+  }
 
   button {
     background-color: white;
