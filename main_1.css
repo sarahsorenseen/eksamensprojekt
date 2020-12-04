@@ -1,28 +1,28 @@
 * {box-sizing: border-box;}
 
 .container > * {
-  background-color: #97B2AD;
-  padding: 10px
+  background-color: white;
+  padding: 5px;
+  font-family: arial;
 }
+
+
 
 nav ul {
   border: 1px solid #97B2AD;
   background-color: #97B2AD;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding:0;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-direction: row;
 }
-
-
 
 li {
   float: left;
   flex-grow: 1;
 }
-
 
 li a {
   display: inline-block;
@@ -38,30 +38,75 @@ li a:hover {
   background-color: #CEDDD9;
 }
 
+/*
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  list-style: none;
+  background-color:#97B2AD;
+  min-width: 160px;
+  z-index: 1;
+}
+/*z-index afgør hvilket lag det ligger i*/
+
+
+/*
+.dropdown-content a {
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #CEDDD9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown a:hover .dropbutton {
+  background-color: #97B2AD;
+}
+*/
+
 
 .logo{
-  width: 5em;
-  height: 5em;
+  width: 10em;
+  height: 10em;
 }
 
 .header{
   grid-area: header;
   text-align: center;
+  background-color: #97B2AD;
+  height: 200px;
+  padding-top: 25px;
 }
 
-.flexbox {
+.dropdown-content {
   grid-area: nav;
+  list-style: none;
 }
 
 .content {
   grid-area: content;
   background-color: white;
+  list-style: none;
 }
 
 
 .footer {
   grid-area: footer;
   background-color: #CEDDD9;
+  text-align: center;
 }
 
 .container {
@@ -93,6 +138,68 @@ li a:hover {
   "billede 3"
 }
 
+.collage img {
+  display:grid;
+  margin: 0 auto;
+}
+
+.collage p {
+  display: grid;
+  margin: 0 auto;
+}
+
+.nav-hide-on-mobile {
+  display: none;
+}
+
+
+@media  (max-width:400px){
+
+  button {
+    background-color: white;
+    color: #97B2AD;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color:#97B2AD;
+    min-width: 160px;
+    z-index: 1;
+  }
+  /*z-index afgør hvilket lag det ligger i*/
+
+
+
+  .dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #CEDDD9;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown a:hover .dropbutton {
+    background-color: #97B2AD;
+  }
+}
 
 
 @media  (min-width:400px){
@@ -109,6 +216,17 @@ li a:hover {
   "footer footer"
 }
 
+
+.dropdown {
+  display: none;
+}
+
+.nav-hide-on-mobile {
+  display: flex;
+}
+}
+
+/*
 .header {
   background-color:#97B2AD;
   border: 0;
@@ -116,15 +234,45 @@ li a:hover {
   margin: 0;
 }
 
-nav ul {
-  background-color: white;
+.logo {
+  width: 10em;
+  height: 10em;
+}
+
+.flexbox {
+  border: 1px solid #97B2AD;
+  background-color: #97B2AD;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+li {
+  float: left;
+  flex-grow: 1;
 }
 
 li a {
-  color: #97B2AD;
+  display: inline-block;
+  color: white;
+  margin-right: 20px;
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
+li a:hover {
+  background-color: #CEDDD9;
+}
 
+.flexbox {
+  grid-area: nav;
+}
+*/
 
 
 
