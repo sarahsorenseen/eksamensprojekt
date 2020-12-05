@@ -209,7 +209,7 @@ p {
   button {
     background-color: white;
     color: #97B2AD;
-    padding: 10px;
+    padding: 0;
     font-size: 20px;
     border: none;
   }
@@ -218,6 +218,8 @@ p {
     position: relative;
     display: inline-block;
     width: 100vw;
+    left: 15px;
+    top: 5px;
   }
 
   .dropdown-content {
