@@ -6,7 +6,7 @@ margin: 0%;
 .container > * {
   background-color: white;
   padding: 5px;
-  font-family: arial;
+  font-family: 'Montserrat', sans-serif;
   width: 100vw;
 }
 
@@ -143,7 +143,7 @@ p {
 .billede1{
   width: 15em;
   height: 200px;
-  background-image:url(hvid_sort_portrait.jpg);
+  background-image:url(magasin.jpg);
   content-align: center;
   grid-area: billede1;
   background-size: cover;
@@ -278,7 +278,6 @@ p {
 
 .nav-hide-on-mobile {
   display: flex;
-  border: 1px solid #97B2AD;
   background-color: #97B2AD;
   list-style: none;
   margin: 0;
@@ -291,7 +290,7 @@ p {
 
 
 .header {
-  background-color:#97B2AD;
+  background-color: #97B2AD;
   border: 0;
   padding:0;
   margin: 0;
