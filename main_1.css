@@ -154,6 +154,15 @@ h2 {
   font-size: 15px;
 }
 
+.kontakt {
+  color: white;
+  background-color: #B08770;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 50px;
+  text-align: center;
+}
+
 .portrait {
   width: 15em;
   height: 200px;
@@ -165,6 +174,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 .billede1{
@@ -177,6 +187,7 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10%;
 }
 
 .billede2{
@@ -298,7 +309,7 @@ h2 {
 }
 
 
-@media  (min-width:400px){
+@media only and screen (min-width:400px){
 .container {
   display: grid;
   height: 100vh;
@@ -342,6 +353,18 @@ h2 {
   width: 10em;
   height: 10em;
 }
+
+/*
+.collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "billede1 billede2 billede3"
+  "text1 text2 text3"
+}
+*/
+
 
 /*
 .flexbox {
