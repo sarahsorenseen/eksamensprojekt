@@ -12,6 +12,7 @@ margin: 0%;
 
 body {
   /*width: 100vw;*/
+  text-align: center;
 }
 
 nav ul {
@@ -133,7 +134,7 @@ li a:hover {
 }
 
 p {
-  width: 80vw;
+  /*width: 80vw;*/
 }
 
 .velkommen {
@@ -147,6 +148,9 @@ p {
   content-align: center;
   grid-area: billede1;
   background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .billede2{
@@ -156,6 +160,9 @@ p {
   content-align: center;
   grid-area: billede2;
   background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .billede3{
@@ -165,18 +172,27 @@ p {
   content-align: center;
   grid-area: billede3;
   background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text1 {
   grid-area: text1;
+  text-align: center;
+  width: 50%;
 }
 
 .text2 {
   grid-area: text2;
+  text-align: center;
+  width: 50%;
 }
 
 .text3 {
   grid-area: text3;
+  text-align: center;
+  width: 50%;
 }
 
 .collage {
@@ -282,7 +298,7 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: row;
 }
 }
