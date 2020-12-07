@@ -12,7 +12,6 @@ margin: 0%;
 
 body {
   /*width: 100vw;*/
-  text-align: center;
 }
 
 nav ul {
@@ -135,10 +134,37 @@ li a:hover {
 
 p {
   /*width: 80vw;*/
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%
 }
 
 .velkommen {
   padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.portrait {
+  width: 15em;
+  height: 200px;
+  background-image:url(DSC05957.jpg);
+  content-align: center;
+  grid-area: billede1;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
 }
 
 .billede1{
@@ -156,7 +182,7 @@ p {
 .billede2{
   width: 15em;
   height: 200px;
-  background-image: url(DSC05904.jpg);
+  background-image: url(hand.jpg);
   content-align: center;
   grid-area: billede2;
   background-size: cover;
