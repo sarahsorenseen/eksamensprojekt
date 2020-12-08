@@ -239,6 +239,42 @@ h2 {
   margin-right: auto;
 }
 
+.billede_fire {
+  width: 300px;
+  height: 200px;
+  background-image: url(IMG_7684.jpg);
+  content-align: center;
+  grid-area: billede_fire;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.billede_fem {
+  width: 300px;
+  height: 200px;
+  background-image: url(hvid_sort_portrait.jpg);
+  content-align: center;
+  grid-area: billede_fem;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.billede_seks {
+  width: 300px;
+  height: 200px;
+  background-image: url(DSC05904.jpg);
+  content-align: center;
+  grid-area: billede_seks;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text_et {
   grid-area: text_et;
   text-align: center;
@@ -257,10 +293,28 @@ h2 {
   /*width: 50%;*/
 }
 
+.text_fire {
+  grid-area: text_fire;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text_fem {
+  grid-area: text_fem;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text_seks {
+  grid-area: text_seks;
+  text-align: center;
+  /*width: 50%;*/
+}
+
 .collage_to {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-template-areas:
   "billede_et"
   "text_et"
@@ -268,6 +322,13 @@ h2 {
   "text_to"
   "billede_tre"
   "text_tre"
+  "billede_fire"
+  "text_fire"
+  "billede_fem"
+  "text_fem"
+  "billede_seks"
+  "text_seks"
+
 }
 
 .nav-hide-on-mobile {
