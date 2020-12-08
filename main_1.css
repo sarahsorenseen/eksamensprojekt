@@ -5,13 +5,10 @@ margin: 0%;
 
 .container > * {
   background-color: white;
-  padding: 5px;
+  /*padding: 5px;*/
+  margin: 0px;
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
-}
-
-body {
-  /*width: 100vw;*/
 }
 
 nav ul {
@@ -94,7 +91,7 @@ li a:hover {
   text-align: center;
   background-color: #97B2AD;
   height: 200px;
-  padding-top: 25px;
+  /*padding-top: 25px;*/
   width: 100vw;
 }
 
@@ -161,13 +158,14 @@ h2 {
   font-size: 15px;
   border-radius: 50px;
   text-align: center;
+  margin-left: 30%;
 }
 
 .portrait {
   width: 15em;
   height: 200px;
   background-image:url(DSC05957.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede1;
   background-size: cover;
   display: block;
@@ -178,10 +176,10 @@ h2 {
 }
 
 .billede1{
-  width: 15em;
+  width: 300px;
   height: 200px;
   background-image:url(magasin.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede1;
   background-size: cover;
   display: block;
@@ -191,10 +189,10 @@ h2 {
 }
 
 .billede2{
-  width: 15em;
+  width: 300px;
   height: 200px;
   background-image: url(hand.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede2;
   background-size: cover;
   display: block;
@@ -203,7 +201,7 @@ h2 {
 }
 
 .billede3{
-  width: 15em;
+  width: 300px;
   height: 200px;
   background-image: url(IMG_7689.jpg);
   content-align: center;
@@ -217,25 +215,25 @@ h2 {
 .text1 {
   grid-area: text1;
   text-align: center;
-  width: 50%;
+  /*width: 50%;*/
 }
 
 .text2 {
   grid-area: text2;
   text-align: center;
-  width: 50%;
+  /*width: 50%;*/
 }
 
 .text3 {
   grid-area: text3;
   text-align: center;
-  width: 50%;
+  /*width: 50%;*/
 }
 
 .collage {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
   "billede1"
   "text1"
@@ -246,13 +244,80 @@ h2 {
 }
 
 
+.billede0_1{
+  width: 300px;
+  height: 200px;
+  background-image:url(magasin.jpg);
+  text-align: center;
+  grid-area: billede1;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede0_2{
+  width: 300px;
+  height: 200px;
+  background-image: url(hand.jpg);
+  text-align: center;
+  grid-area: billede2;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.billede0_3{
+  width: 300px;
+  height: 200px;
+  background-image: url(IMG_7689.jpg);
+  content-align: center;
+  grid-area: billede3;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text0_1 {
+  grid-area: text1;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text0_2 {
+  grid-area: text2;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text0_3 {
+  grid-area: text3;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.collage2 {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+  "billede0_1"
+  "text0_1"
+  "billede0_2"
+  "text0_2"
+  "billede0_3"
+  "text0_3"
+}
 
 
 .nav-hide-on-mobile {
   display: none;
 }
 
-
+/*dropdown*/
 @media  (max-width:400px){
 
   nav ul {
@@ -307,19 +372,19 @@ h2 {
     background-color: #CEDDD9;
   }
 }
+/*}*/
 
-
-@media only and screen (min-width:400px){
+/*Ipad*/
+@media (min-width:400px){
 .container {
   display: grid;
   height: 100vh;
   width: 100vw;
   grid-gap: 5px;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 0.2fr 2fr 2fr 0.2fr;
+  grid-template-rows: 0.2fr 2fr 0.2fr;
   grid-template-areas:
   "header nav"
-  "content_1 content_1"
   "content_1 content_1"
   "footer footer"
 }
@@ -338,8 +403,6 @@ h2 {
   justify-content: center;
   flex-direction: row;
 }
-}
-
 
 .header {
   background-color: #97B2AD;
@@ -353,59 +416,10 @@ h2 {
   width: 10em;
   height: 10em;
 }
-
-/*
-.collage {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-  "billede1 billede2 billede3"
-  "text1 text2 text3"
-}
-*/
-
-
-/*
-.flexbox {
-  border: 1px solid #97B2AD;
-  background-color: #97B2AD;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
 }
 
-li {
-  float: left;
-  flex-grow: 1;
-}
 
-li a {
-  display: inline-block;
-  color: white;
-  margin-right: 20px;
-  padding: 2px;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #CEDDD9;
-}
-
-.flexbox {
-  grid-area: nav;
-}
-*/
-
-
-
-
-@media  (min-width:800px){
+@media (min-width:800px){
 .container {
   display: grid;
   height: 100vh;
@@ -415,6 +429,21 @@ li a:hover {
   grid-template-areas:
   "header nav"
   "content_1 content_1"
-  "content_1 content_1"
   "footer footer"
+}
+
+
+.dropdown {
+  display: none;
+}
+
+.nav-hide-on-mobile {
+  display: flex;
+  background-color: #97B2AD;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-direction: row;
+}
 }
