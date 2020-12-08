@@ -41,46 +41,6 @@ li a:hover {
   background-color: #CEDDD9;
 }
 
-/*
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  border-radius: 5px;
-  display: none;
-  position: absolute;
-  list-style: none;
-  background-color:#97B2AD;
-  min-width: 160px;
-  z-index: 1;
-}
-/*z-index afgør hvilket lag det ligger i*/
-
-
-/*
-.dropdown-content a {
-  color: white;
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #CEDDD9;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown a:hover .dropbutton {
-  background-color: #97B2AD;
-}
-*/
-
-
 .logo{
   width: 10em;
   height: 10em;
@@ -107,7 +67,6 @@ li a:hover {
   padding: 5%;
   width: 100vw;
 }
-
 
 .footer {
   grid-area: footer;
@@ -166,7 +125,6 @@ h2 {
   height: 200px;
   background-image:url(DSC05957.jpg);
   text-align: center;
-  grid-area: billede1;
   background-size: cover;
   display: block;
   margin-left: auto;
@@ -244,12 +202,12 @@ h2 {
 }
 
 
-.billede0_1{
+.billede_et{
   width: 300px;
   height: 200px;
   background-image:url(magasin.jpg);
   text-align: center;
-  grid-area: billede1;
+  grid-area: billede_et;
   background-size: cover;
   display: block;
   margin-left: auto;
@@ -257,61 +215,60 @@ h2 {
   margin-top: 10%;
 }
 
-.billede0_2{
+.billede_to{
   width: 300px;
   height: 200px;
   background-image: url(hand.jpg);
   text-align: center;
-  grid-area: billede2;
+  grid-area: billede_to;
   background-size: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.billede0_3{
+.billede_tre{
   width: 300px;
   height: 200px;
   background-image: url(IMG_7689.jpg);
   content-align: center;
-  grid-area: billede3;
+  grid-area: billede_tre;
   background-size: cover;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.text0_1 {
-  grid-area: text1;
+.text_et {
+  grid-area: text_et;
   text-align: center;
   /*width: 50%;*/
 }
 
-.text0_2 {
-  grid-area: text2;
+.text_to {
+  grid-area: text_to;
   text-align: center;
   /*width: 50%;*/
 }
 
-.text0_3 {
-  grid-area: text3;
+.text_tre {
+  grid-area: text_tre;
   text-align: center;
   /*width: 50%;*/
 }
 
-.collage2 {
+.collage_to {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
-  "billede0_1"
-  "text0_1"
-  "billede0_2"
-  "text0_2"
-  "billede0_3"
-  "text0_3"
+  "billede_et"
+  "text_et"
+  "billede_to"
+  "text_to"
+  "billede_tre"
+  "text_tre"
 }
-
 
 .nav-hide-on-mobile {
   display: none;
@@ -416,6 +373,134 @@ h2 {
   width: 10em;
   height: 10em;
 }
+
+.content_1 {
+  grid-area: content_1;
+  background-color: white;
+  list-style: none;
+  padding: 5%;
+  width: 100vw;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #CEDDD9;
+  text-align: center;
+}
+
+p {
+  /*width: 80vw;*/
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%
+}
+
+.velkommen {
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 15px;
+}
+
+.kontakt {
+  color: white;
+  background-color: #B08770;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 50px;
+  text-align: center;
+  margin-left: 5%;
+  border: none;
+}
+
+.portrait {
+  width: 500px;
+  height: 300px;
+  background-image:url(DSC05957.jpg);
+  text-align: center;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.billede1{
+  width: 200px;
+  height: 200px;
+  background-image:url(magasin.jpg);
+  text-align: center;
+  grid-area: billede1;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede2{
+  width: 200px;
+  height: 200px;
+  background-image: url(hand.jpg);
+  text-align: center;
+  grid-area: billede2;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede3{
+  width: 200px;
+  height: 200px;
+  background-image: url(IMG_7689.jpg);
+  content-align: center;
+  grid-area: billede3;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.text1 {
+  grid-area: text1;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text2 {
+  grid-area: text2;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text3 {
+  grid-area: text3;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.collage {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "billede1 billede2 billede3"
+  "text1 text2 text3"
+}
+
 }
 
 
