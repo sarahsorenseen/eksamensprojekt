@@ -112,6 +112,18 @@ h2 {
   text-align: center;
   font-size: 15px;
   font-weight: normal;
+  padding-bottom: 5%;
+}
+
+.om_mig {
+  padding: 5%;
+}
+
+.beskrivelse {
+  padding-bottom: 20%;
+  padding-top: 0;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .kontakt {
@@ -123,6 +135,14 @@ h2 {
   text-align: center;
   margin-left: 30%;
   font-family: 'Montserrat', sans-serif;
+}
+
+.kontakt_side {
+  padding: 5%;
+}
+
+.fang {
+  padding-bottom: 0;
 }
 
 .portrait {
@@ -167,7 +187,7 @@ h2 {
   width: 300px;
   height: 200px;
   background-image: url(IMG_7689.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede3;
   background-size: cover;
   display: block;
@@ -247,7 +267,7 @@ h2 {
   width: 300px;
   height: 200px;
   background-image: url(IMG_7689.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_tre;
   background-size: cover;
   display: block;
@@ -259,7 +279,7 @@ h2 {
   width: 300px;
   height: 200px;
   background-image: url(IMG_7684.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_fire;
   background-size: cover;
   display: block;
@@ -271,7 +291,7 @@ h2 {
   width: 300px;
   height: 200px;
   background-image: url(hvid_sort_portrait.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_fem;
   background-size: cover;
   display: block;
@@ -283,7 +303,7 @@ h2 {
   width: 300px;
   height: 200px;
   background-image: url(DSC05904.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_seks;
   background-size: cover;
   display: block;
@@ -471,7 +491,7 @@ p {
 
 .velkommen {
   padding-bottom: 5%;
-  padding-top: 5%;
+  /*padding-top: 5%;*/
 }
 
 h1 {
@@ -486,6 +506,7 @@ h2 {
   text-align: center;
   font-size: 15px;
   font-weight: normal;
+  padding-bottom: 0;
 }
 
 .kontakt {
@@ -498,6 +519,15 @@ h2 {
   margin-left: 5%;
   border: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+.kontakt_side {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.fang {
+  padding-bottom: 0;
 }
 
 .portrait {
@@ -526,8 +556,8 @@ h2 {
 }
 
 .billede1{
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   background-image:url(magasin.jpg);
   text-align: center;
   grid-area: billede1;
@@ -539,8 +569,8 @@ h2 {
 }
 
 .billede2{
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   background-image: url(hand.jpg);
   text-align: center;
   grid-area: billede2;
@@ -552,10 +582,10 @@ h2 {
 }
 
 .billede3{
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   background-image: url(IMG_7689.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede3;
   background-size: cover;
   display: block;
@@ -585,16 +615,20 @@ h2 {
 .collage {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
-  "billede1 billede2 billede3"
-  "text1 text2 text3"
+  "billede1"
+  "text1"
+  "billede2"
+  "text2"
+  "billede3"
+  "text3"
 }
 
 
 .billede_et{
-  width: 200px;
+  width: 300px;
   height: 200px;
   background-image:url(magasin.jpg);
   text-align: center;
@@ -607,7 +641,7 @@ h2 {
 }
 
 .billede_to{
-  width: 200px;
+  width: 300px;
   height: 200px;
   background-image: url(hand.jpg);
   text-align: center;
@@ -620,10 +654,10 @@ h2 {
 }
 
 .billede_tre{
-  width: 200px;
+  width: 300px;
   height: 200px;
   background-image: url(IMG_7689.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_tre;
   background-size: cover;
   display: block;
@@ -633,10 +667,10 @@ h2 {
 }
 
 .billede_fire {
-  width: 200px;
+  width: 300px;
   height: 200px;
   background-image: url(IMG_7684.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_fire;
   background-size: cover;
   display: block;
@@ -646,10 +680,10 @@ h2 {
 }
 
 .billede_fem {
-  width: 200px;
+  width: 300px;
   height: 200px;
   background-image: url(hvid_sort_portrait.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_fem;
   background-size: cover;
   display: block;
@@ -659,10 +693,10 @@ h2 {
 }
 
 .billede_seks {
-  width: 200px;
+  width: 300px;
   height: 200px;
   background-image: url(DSC05904.jpg);
-  content-align: center;
+  text-align: center;
   grid-area: billede_seks;
   background-size: cover;
   display: block;
@@ -709,17 +743,19 @@ h2 {
 
 .collage_to {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
-  "billede_et billede_to billede_tre"
-  "text_et text_to text_tre"
-  "billede_fire billede_fem billede_seks"
-  "text_fire text_fem text_seks"
+  "billede_et billede_to"
+  "text_et text_to"
+  "billede_tre billede_fire"
+  "text_tre text_fire"
+  "billede_fem billede_seks"
+  "text_fem text_seks"
 }
 }
 
-
+/*desktop*/
 @media (min-width:800px){
 .container {
   display: grid;
@@ -747,4 +783,270 @@ h2 {
   justify-content: center;
   flex-direction: row;
 }
+
+p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-weight: lighter;
+}
+
+.velkommen {
+  /*padding-bottom: 5%;*/
+}
+
+h1 {
+  text-align: center;
+  padding-top: 0;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  padding-bottom: 0;
+}
+
+.kontakt {
+  color: white;
+  background-color: #B08770;
+  font-size: 20px;
+  border-radius: 50px;
+  text-align: center;
+  margin-left: 5%;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.kontakt_side {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.fang {
+  padding-bottom: 0;
+}
+
+.portrait {
+  width: 500px;
+  height: 300px;
+  background-image:url(hvid_sort_portrait.jpg);
+  text-align: center;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+}
+
+.om_mig_billede {
+  width: 500px;
+  height: 300px;
+  background-image:url(DSC05957.jpg);
+  text-align: center;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.billede1{
+  width: 400px;
+  height: 300px;
+  background-image:url(magasin.jpg);
+  text-align: center;
+  grid-area: billede1;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede2{
+  width: 400px;
+  height: 300px;
+  background-image: url(hand.jpg);
+  text-align: center;
+  grid-area: billede2;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede3{
+  width: 400px;
+  height: 300px;
+  background-image: url(IMG_7689.jpg);
+  text-align: center;
+  grid-area: billede3;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.text1 {
+  grid-area: text1;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text2 {
+  grid-area: text2;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text3 {
+  grid-area: text3;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.collage {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  "billede1 billede2 billede3"
+  "text1 text2 text3"
+}
+
+
+.billede_et{
+  width: 300px;
+  height: 200px;
+  background-image:url(magasin.jpg);
+  text-align: center;
+  grid-area: billede_et;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede_to{
+  width: 300px;
+  height: 200px;
+  background-image: url(hand.jpg);
+  text-align: center;
+  grid-area: billede_to;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede_tre{
+  width: 300px;
+  height: 200px;
+  background-image: url(IMG_7689.jpg);
+  text-align: center;
+  grid-area: billede_tre;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede_fire {
+  width: 300px;
+  height: 200px;
+  background-image: url(IMG_7684.jpg);
+  text-align: center;
+  grid-area: billede_fire;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede_fem {
+  width: 300px;
+  height: 200px;
+  background-image: url(hvid_sort_portrait.jpg);
+  text-align: center;
+  grid-area: billede_fem;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.billede_seks {
+  width: 300px;
+  height: 200px;
+  background-image: url(DSC05904.jpg);
+  text-align: center;
+  grid-area: billede_seks;
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+}
+
+.text_et {
+  grid-area: text_et;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text_to {
+  grid-area: text_to;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text_tre {
+  grid-area: text_tre;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text_fire {
+  grid-area: text_fire;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text_fem {
+  grid-area: text_fem;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.text_seks {
+  grid-area: text_seks;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.collage_to {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+  "billede_et billede_to"
+  "text_et text_to"
+  "billede_tre billede_fire"
+  "text_tre text_fire"
+  "billede_fem billede_seks"
+  "text_fem text_seks"
+}
+
+
 }
