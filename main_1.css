@@ -875,6 +875,24 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+kontaktbutton.
+
+a.kontaktbutton:link {
+  text-decoration: none;
+}
+
+a.kontaktbutton:visited {
+  color: grey;
+}
+
+a.kontaktbutton:hover {
+  background-color: #DBC6B6;
+}
+
+a.kontaktbutton:active {
+  text-decoration: none;
+}
+
 .kontakt_side {
   padding-top: 2%;
   text-align: center;
