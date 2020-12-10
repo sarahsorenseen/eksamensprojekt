@@ -133,7 +133,8 @@ h2 {
   font-size: 15px;
   border-radius: 50px;
   text-align: center;
-  margin-left: 30%;
+  margin-left: 20%;
+  margin-right: 20%;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -278,7 +279,7 @@ h2 {
 .billede_fire {
   width: 300px;
   height: 200px;
-  background-image: url(IMG_7684.jpg);
+  background-image: url(paper_airplane.jpg);
   text-align: center;
   grid-area: billede_fire;
   background-size: cover;
@@ -290,7 +291,7 @@ h2 {
 .billede_fem {
   width: 300px;
   height: 200px;
-  background-image: url(hvid_sort_portrait.jpg);
+  background-image: url(IMG_7684.jpg);
   text-align: center;
   grid-area: billede_fem;
   background-size: cover;
@@ -302,7 +303,7 @@ h2 {
 .billede_seks {
   width: 300px;
   height: 200px;
-  background-image: url(DSC05904.jpg);
+  background-image: url(fyn_plakat.jpg);
   text-align: center;
   grid-area: billede_seks;
   background-size: cover;
@@ -491,6 +492,7 @@ p {
 
 .velkommen {
   padding-bottom: 5%;
+  font-size: 20px;
   /*padding-top: 5%;*/
 }
 
@@ -500,6 +502,7 @@ h1 {
   padding-bottom: 1%;
   font-weight: bold;
   letter-spacing: 0.2em;
+  font-size: 50px;
 }
 
 h2 {
@@ -507,23 +510,34 @@ h2 {
   font-size: 15px;
   font-weight: normal;
   padding-bottom: 0;
+  font-size: 30px;
 }
 
 .kontakt {
   color: white;
   background-color: #B08770;
   padding: 10px;
-  font-size: 15px;
+  font-size: 25px;
   border-radius: 50px;
   text-align: center;
-  margin-left: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
   border: none;
   font-family: 'Montserrat', sans-serif;
+}
+
+.beskrivelse {
+  font-size: 20px;
+}
+
+.om_mig {
+  font-size: 20px;
 }
 
 .kontakt_side {
   padding-top: 2%;
   text-align: center;
+  font-size: 20px;
 }
 
 .fang {
@@ -556,8 +570,8 @@ h2 {
 }
 
 .billede1{
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
   background-image:url(magasin.jpg);
   text-align: center;
   grid-area: billede1;
@@ -569,8 +583,8 @@ h2 {
 }
 
 .billede2{
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
   background-image: url(hand.jpg);
   text-align: center;
   grid-area: billede2;
@@ -582,8 +596,8 @@ h2 {
 }
 
 .billede3{
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
   background-image: url(IMG_7689.jpg);
   text-align: center;
   grid-area: billede3;
@@ -597,18 +611,21 @@ h2 {
 .text1 {
   grid-area: text1;
   text-align: center;
+  font-size: 30px;
   /*width: 50%;*/
 }
 
 .text2 {
   grid-area: text2;
   text-align: center;
+  font-size: 30px;
   /*width: 50%;*/
 }
 
 .text3 {
   grid-area: text3;
   text-align: center;
+  font-size: 30px;
   /*width: 50%;*/
 }
 
@@ -669,7 +686,7 @@ h2 {
 .billede_fire {
   width: 300px;
   height: 200px;
-  background-image: url(IMG_7684.jpg);
+  background-image: url(paper_airplane.jpg);
   text-align: center;
   grid-area: billede_fire;
   background-size: cover;
@@ -682,7 +699,7 @@ h2 {
 .billede_fem {
   width: 300px;
   height: 200px;
-  background-image: url(hvid_sort_portrait.jpg);
+  background-image: url(IMG_7684.jpg);
   text-align: center;
   grid-area: billede_fem;
   background-size: cover;
@@ -695,7 +712,7 @@ h2 {
 .billede_seks {
   width: 300px;
   height: 200px;
-  background-image: url(DSC05904.jpg);
+  background-image: url(fyn_plakat.jpg);
   text-align: center;
   grid-area: billede_seks;
   background-size: cover;
@@ -708,36 +725,42 @@ h2 {
 .text_et {
   grid-area: text_et;
   text-align: center;
+  font-size: 25px;
   /*width: 50%;*/
 }
 
 .text_to {
   grid-area: text_to;
   text-align: center;
+  font-size: 25px;
   /*width: 50%;*/
 }
 
 .text_tre {
   grid-area: text_tre;
   text-align: center;
+  font-size: 25px;
   /*width: 50%;*/
 }
 
 .text_fire {
   grid-area: text_fire;
   text-align: center;
+  font-size: 25px;
   /*width: 50%;*/
 }
 
 .text_fem {
   grid-area: text_fem;
   text-align: center;
+  font-size: 25px;
   /*width: 50%;*/
 }
 
 .text_seks {
   grid-area: text_seks;
   text-align: center;
+  font-size: 25px;
   /*width: 50%;*/
 }
 
@@ -963,7 +986,7 @@ h2 {
 .billede_fire {
   width: 300px;
   height: 200px;
-  background-image: url(IMG_7684.jpg);
+  background-image: url(paper_airplane.jpg);
   text-align: center;
   grid-area: billede_fire;
   background-size: cover;
@@ -976,7 +999,7 @@ h2 {
 .billede_fem {
   width: 300px;
   height: 200px;
-  background-image: url(hvid_sort_portrait.jpg);
+  background-image: url(IMG_7684.jpg);
   text-align: center;
   grid-area: billede_fem;
   background-size: cover;
@@ -989,7 +1012,7 @@ h2 {
 .billede_seks {
   width: 300px;
   height: 200px;
-  background-image: url(DSC05904.jpg);
+  background-image: url(fyn_plakat.jpg);
   text-align: center;
   grid-area: billede_seks;
   background-size: cover;
