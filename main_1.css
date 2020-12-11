@@ -194,6 +194,40 @@ div.ikoner a:active {
   text-decoration: none;
 }
 
+.videotekst {
+  text-align: center;
+}
+
+.video1{
+  position: relative;
+  width: 100%;
+  padding-bottom: 60%;
+  height: 0;
+  margin-bottom: 15%;
+}
+.video1 iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video2{
+  position: relative;
+  width: 100%;
+  padding-bottom: 60%;
+  height: 0;
+}
+.video2 iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
 .portrait {
   width: 15em;
   height: 200px;
@@ -632,6 +666,11 @@ div.ikoner a:hover {
 
 div.ikoner a:active {
   text-decoration: none;
+}
+
+.videotekst {
+  text-align: center;
+  font-size: 40px;
 }
 
 
