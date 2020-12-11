@@ -1,3 +1,4 @@
+/*mobile first*/
 * {box-sizing: border-box;
 padding: 0%;
 margin: 0%;
@@ -138,12 +139,59 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+div.kontakt a:link {
+  color: white;
+  text-decoration: none;
+}
+
+div.kontakt a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+div.kontakt a:hover {
+  color: #DBC6B6;
+}
+
+div.kontakt a:active {
+  text-decoration: none;
+}
+
 .kontakt_side {
   padding: 5%;
 }
 
 .fang {
   padding-bottom: 0;
+}
+
+.ikoner {
+  display: flex;
+  flex-direction: columns;
+  list-style: none;
+  color: black;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0;
+  font-size: 30px;
+}
+
+div.ikoner a:link {
+  color: #B08770;
+  text-decoration: none;
+}
+
+div.ikoner a:visited {
+  color: #B08770;
+  text-decoration: none;
+}
+
+div.ikoner a:hover {
+  color: #B08770;
+}
+
+div.ikoner a:active {
+  text-decoration: none;
 }
 
 .portrait {
@@ -557,6 +605,36 @@ h2 {
   padding-bottom: 0;
 }
 
+.ikoner {
+  display: flex;
+  flex-direction: columns;
+  list-style: none;
+  color: #B08770;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0;
+  font-size: 40px;
+}
+
+div.ikoner a:link {
+  color: #B08770;
+  text-decoration: none;
+}
+
+div.ikoner a:visited {
+  color: #B08770;
+  text-decoration: none;
+}
+
+div.ikoner a:hover {
+  color: #B08770;
+}
+
+div.ikoner a:active {
+  text-decoration: none;
+}
+
+
 .portrait {
   width: 500px;
   height: 300px;
@@ -875,23 +953,6 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-kontaktbutton.
-
-a.kontaktbutton:link {
-  text-decoration: none;
-}
-
-a.kontaktbutton:visited {
-  color: grey;
-}
-
-a.kontaktbutton:hover {
-  background-color: #DBC6B6;
-}
-
-a.kontaktbutton:active {
-  text-decoration: none;
-}
 
 .kontakt_side {
   padding-top: 2%;
@@ -900,6 +961,36 @@ a.kontaktbutton:active {
 
 .fang {
   padding-bottom: 0;
+}
+
+
+.ikoner {
+  display: flex;
+  flex-direction: columns;
+  list-style: none;
+  color: #B08770;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0;
+  font-size: 50px;
+}
+
+div.ikoner a:link {
+  color: #B08770;
+  text-decoration: none;
+}
+
+div.ikoner a:visited {
+  color: #B08770;
+  text-decoration: none;
+}
+
+div.ikoner a:hover {
+  color: #B08770;
+}
+
+div.ikoner a:active {
+  text-decoration: none;
 }
 
 .om_mig {
@@ -1014,7 +1105,7 @@ a.kontaktbutton:active {
 
 
 .billede_et{
-  width: 500px;
+  width: 400px;
   height: 300px;
   background-image:url(magasin.jpg);
   text-align: center;
@@ -1027,7 +1118,7 @@ a.kontaktbutton:active {
 }
 
 .billede_to{
-  width: 500px;
+  width: 400px;
   height: 300px;
   background-image: url(hand.jpg);
   text-align: center;
@@ -1040,7 +1131,7 @@ a.kontaktbutton:active {
 }
 
 .billede_tre{
-  width: 500px;
+  width: 400px;
   height: 300px;
   background-image: url(IMG_7689.jpg);
   text-align: center;
@@ -1053,7 +1144,7 @@ a.kontaktbutton:active {
 }
 
 .billede_fire {
-  width: 500px;
+  width: 400px;
   height: 300px;
   background-image: url(paper_airplane.jpg);
   text-align: center;
@@ -1066,7 +1157,7 @@ a.kontaktbutton:active {
 }
 
 .billede_fem {
-  width: 500px;
+  width: 400px;
   height: 300px;
   background-image: url(IMG_7684.jpg);
   text-align: center;
@@ -1079,7 +1170,7 @@ a.kontaktbutton:active {
 }
 
 .billede_seks {
-  width: 500px;
+  width: 400px;
   height: 300px;
   background-image: url(fyn_plakat.jpg);
   text-align: center;
