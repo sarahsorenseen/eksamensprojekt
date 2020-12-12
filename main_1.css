@@ -4,14 +4,21 @@ padding: 0%;
 margin: 0%;
 }
 
+/*Dette er en selektor, nemlig klassen container, som er en slags usynlig boks, der omringer alle elementerne.
+Når man styler den med forskellige properties, så er det en god ide, at bruge > * efter,
+for så styler den alle elementerne, der ligger herunder og styler på det. */
 .container > * {
   background-color: white;
-  /*padding: 5px;*/
   margin: 0px;
   font-family: 'Montserrat', sans-serif;
   width: 100vw;
 }
 
+/*Her styles min navigation, der er menubaren. Jeg bruger flexbox, som ses ved display:flex;
+Navigationen er sat op som en unordered list i html, deraf ul.
+Elementer er på en række, lodret række, ses ved flex-direction:row;
+Under li styles alle items i listen. Her ses flex-grow, som angiver hvor stort item'et skal
+være i forhold til de andre items. Li a beskriver linket ved hver list-item.*/
 nav ul {
   border: 1px solid #97B2AD;
   background-color: #97B2AD;
@@ -47,20 +54,25 @@ li a:hover {
   height: 10em;
 }
 
+/*Herunder er selektoren klassen header, der bl.a. indeholder logo, baggrundsfarve og menulinje.
+Den har bl.a. en property, der hedder grid-area, som gør at den kan styles til at være et bestemt sted på siden,
+altså hvor meget den skal fylde på siden.*/
 .header{
   grid-area: header;
   text-align: center;
   background-color: #97B2AD;
   height: 200px;
-  /*padding-top: 25px;*/
   width: 100vw;
 }
 
+/*Her har vi selektoren på klassen dropdown-content, som har property grid-area: med værdien nav; */
 .dropdown-content {
   grid-area: nav;
   list-style: none;
 }
 
+/*Her styles der på selektor klassen content_1, hvor den har nogle forskellige properties,
+som fx. grid-area, background-color osv. de properties har fået nogle værdier.*/
 .content_1 {
   grid-area: content_1;
   background-color: white;
@@ -69,12 +81,23 @@ li a:hover {
   width: 100vw;
 }
 
+/*Footeren er ligeledes styles med forskellige properties og værdier*/
 .footer {
   grid-area: footer;
   background-color: #CEDDD9;
   text-align: center;
 }
 
+/*Herunder er selektoren container, der som sagt er den der omringer alle elementer.
+Den har property grid, med værdien grid, der gør at man kan anvende de properties,
+der hedder grid-template-columns, der beskriver hvor mange kolonner, siden skal have.
+Og hvor store de skal være i forhold til hinanden. I dette tilfælde er værdien 1fr,
+som viser at denne side, som har i kolonne. Property grid-template-rows beskriver
+hvor mange rækker, lodret, som siden skal have, og hvor meget de skal fylde i
+forhold til hinanden. I dette tilfælde skal det øverste fylde 2, og næste 0.2 osv.
+Endnu en property er grid-template-areas, hvor man her skal bruge de grid-areas,
+som man har givet de klasser man har stylet til at være med i grid.
+Man sætter dem op på baggrund af columns og rows.*/
 .container {
   width: 100vw;
   display: grid;
@@ -89,6 +112,10 @@ li a:hover {
   "footer"
 }
 
+/*Herunder ses selektorne p, h1 og h2. Deres properties og værdier styler alle
+p=paragraffer, h1=overskrift1 og h2=overskrift2.
+Derudover styles der på klasserne velkommen, om_mig og mange flere.
+Det er paragraffer, der skal styles anderledes end de andre.*/
 p {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -139,6 +166,11 @@ h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
+/*Herunder styles en knap, som er et link, heraf a.
+Jeg har i HTML givet den klassen kontakt.
+Når man styler et link skal man have disse fire selektorer stylet:
+a:link, a:visited, a:hover og a:active. De angiver hvordan linket ser ud,
+når det bare er et link, når det er besøgt, når man kører musen henover og når linket er aktivt*/
 div.kontakt a:link {
   color: white;
   text-decoration: none;
@@ -176,6 +208,7 @@ div.kontakt a:active {
   font-size: 30px;
 }
 
+/*Herunder styles ikoner, her gælder samme princip, som ved kontaktknappen*/
 div.ikoner a:link {
   color: #B08770;
   text-decoration: none;
@@ -198,6 +231,7 @@ div.ikoner a:active {
   text-align: center;
 }
 
+/*Herunder styles videoer*/
 .video1{
   position: relative;
   width: 100%;
@@ -227,7 +261,12 @@ div.ikoner a:active {
   height: 100%;
 }
 
-
+/*Her styles klassen portrait, som er et billede jeg har linket til her i CSS,
+selvom jeg også kunne linke til det i html. Jeg fandt det desværre svært
+at style, hvis det var linket i html, da det ikke ville tage imod mine styles.
+Derfor er det linket med property background-image.
+Property display med værdi block gør at billedet starter på en ny linje,
+og bruger alt pladsen, hvis ikke andet styles*/
 .portrait {
   width: 15em;
   height: 200px;
@@ -241,6 +280,8 @@ div.ikoner a:active {
   margin-top: 10%;
 }
 
+/*Her styler jeg 3 billeder, som jeg gerne vil have på en række,
+derfor har jeg anvendt property grid-area.*/
 .billede1{
   width: 300px;
   height: 200px;
@@ -278,24 +319,25 @@ div.ikoner a:active {
   margin-right: auto;
 }
 
+/*Her styler jeg tekst til billederne, som jeg ligeledes vil have i samme grid
+som billederne, og giver dem derfor også property grid-area*/
 .text1 {
   grid-area: text1;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .text2 {
   grid-area: text2;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .text3 {
   grid-area: text3;
   text-align: center;
-  /*width: 50%;*/
 }
 
+/*Her styles den div, som billederne ligger i, der har klassen collage.
+Igen i 1 kolonne og med 6 rækker.*/
 .collage {
   display: grid;
   grid-template-columns: 1fr;
@@ -333,6 +375,11 @@ div.ikoner a:active {
   margin-top: 5%;
 }
 
+/*Her styles der på en ny collage, nemlig den på min porteføljeside.
+Her anvendes igen property grid-area, så de kan indsættes i grid.
+På billederne anvender jeg også background-size med værdien cover.
+Det gør at billedet fylder hele containeren, også selvom der skal skæres noget af.
+Det vil sige at hvis jeg giver billedet en vidde og en højde, så beskæres billedet til de mål.*/
 .billede_et{
   width: 300px;
   height: 200px;
@@ -409,37 +456,31 @@ div.ikoner a:active {
 .text_et {
   grid-area: text_et;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .text_to {
   grid-area: text_to;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .text_tre {
   grid-area: text_tre;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .text_fire {
   grid-area: text_fire;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .text_fem {
   grid-area: text_fem;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .text_seks {
   grid-area: text_seks;
   text-align: center;
-  /*width: 50%;*/
 }
 
 .collage_to {
@@ -466,7 +507,9 @@ div.ikoner a:active {
   display: none;
 }
 
-/*dropdown*/
+/*dropdown, her styles min dropdown-menu, der kun skal være på mobil-devices.
+For at style, så den kun skal være på mobil anvendes media queries.
+Her angives der at dette herunder kun skal gælde op til en bredde på 400px.*/
 @media  (max-width:400px){
 
   nav ul {
@@ -482,6 +525,9 @@ div.ikoner a:active {
     font-family: 'Montserrat', sans-serif;
   }
 
+/*Her styles klassen dropdown, der indeholder liste med min navigation.
+Den har property position med værdien relative, den angiver at positionen er
+relativ til de andre elementer.*/
   .dropdown {
     position: relative;
     display: inline-block;
@@ -522,7 +568,10 @@ div.ikoner a:active {
 }
 
 
-/*Ipad*/
+/*Ipad, her er media queries på minimun 400px, og der ses layout i 2 kolonner
+i stedet for et. Mange af de samme ting er nævnt, som i mobilen, men med en
+anden størrelse. Placeringen er også lavet om i grid, så det bliver 2 kolonner
+i stedet for en*/
 @media (min-width:400px){
 .container {
   display: grid;
@@ -675,8 +724,8 @@ div.ikoner a:active {
 
 
 .portrait {
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
   background-image:url(hvid_sort_portrait.jpg);
   text-align: center;
   background-size: cover;
@@ -754,21 +803,18 @@ div.ikoner a:active {
   grid-area: text1;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .text2 {
   grid-area: text2;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .text3 {
   grid-area: text3;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .collage {
@@ -868,42 +914,36 @@ div.ikoner a:active {
   grid-area: text_et;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .text_to {
   grid-area: text_to;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .text_tre {
   grid-area: text_tre;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .text_fire {
   grid-area: text_fire;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .text_fem {
   grid-area: text_fem;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .text_seks {
   grid-area: text_seks;
   text-align: center;
   font-size: 40px;
-  /*width: 50%;*/
 }
 
 .collage_to {
@@ -926,7 +966,10 @@ div.ikoner a:active {
 }
 }
 
-/*desktop*/
+/*desktop, herunder er der brugt media queries, som skal gælde for en vidde
+på minimum 800px, og derfor passer til desktop. De 2 kolonner er bibeholdt,
+men billede- og tekststørrelser er ændret. Der er kun stylet på de ting,
+der skulle være anderledes end dem fra de andre devices.*/
 @media (min-width:800px){
 .container {
   display: grid;
@@ -1037,8 +1080,8 @@ div.ikoner a:active {
 }
 
 .portrait {
-  width: 500px;
-  height: 300px;
+  width: 700px;
+  height: 500px;
   background-image:url(hvid_sort_portrait.jpg);
   text-align: center;
   background-size: cover;
@@ -1115,21 +1158,18 @@ div.ikoner a:active {
   grid-area: text1;
   text-align: center;
   font-size: 25px;
-  /*width: 50%;*/
 }
 
 .text2 {
   grid-area: text2;
   text-align: center;
   font-size: 25px;
-  /*width: 50%;*/
 }
 
 .text3 {
   grid-area: text3;
   text-align: center;
   font-size: 25px;
-  /*width: 50%;*/
 }
 
 .collage {
@@ -1225,42 +1265,36 @@ div.ikoner a:active {
   grid-area: text_et;
   text-align: center;
   font-size: 30px;
-  /*width: 50%;*/
 }
 
 .text_to {
   grid-area: text_to;
   text-align: center;
   font-size: 30px;
-  /*width: 50%;*/
 }
 
 .text_tre {
   grid-area: text_tre;
   text-align: center;
   font-size: 30px;
-  /*width: 50%;*/
 }
 
 .text_fire {
   grid-area: text_fire;
   text-align: center;
   font-size: 30px;
-  /*width: 50%;*/
 }
 
 .text_fem {
   grid-area: text_fem;
   text-align: center;
   font-size: 30px;
-  /*width: 50%;*/
 }
 
 .text_seks {
   grid-area: text_seks;
   text-align: center;
   font-size: 30px;
-  /*width: 50%;*/
 }
 
 .collage_to {
