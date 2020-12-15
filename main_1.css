@@ -191,10 +191,12 @@ div.kontakt a:active {
 
 .kontakt_side {
   padding: 5%;
+  text-align: center;
 }
 
 .fang {
   padding-bottom: 0;
+  text-align: center;
 }
 
 .ikoner {
@@ -686,6 +688,8 @@ h2 {
 
 .fang {
   padding-bottom: 0;
+  text-align: center;
+  font-size: 30px;
 }
 
 .ikoner {
